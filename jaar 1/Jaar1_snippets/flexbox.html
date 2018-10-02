@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul#flex-container{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            /*vanaf hier */
+            display:flex;
+            flex-direction:row;/*horizontaal/verticaal uitlijnen*/
+            /*row|column|row-reverse|column-reverse*/
+            flex-wrap:wrap;/*onder elkaar tonen als het scherm kleiner is dan de min-width*/
+            /*rechtsuitlijnen |centreren*/
+            /*justify-content:flex-end|center*/
+            justify-content:space-between;/*space-around*/
+            /*verticaal uitlijnen*/
+          /*  align-content: flex-end;|center*/
+            /*align-items: stretch;|baseline*/
+
+        }
+
+        ul li {
+            /*widht responsive*/
+            flex-grow: 1;
+            width: 50px;
+            height: 70px;
+            padding-top: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            text-align: center;
+        }
+        /*order om de volgoerde te wijzigen*/
+        ul li:first-child { background: #c2d775;order:6 ; }
+        ul li:nth-child(2){ background: #007278;order: 5; /*flex-grow:3  om childs groter te maken als andere*/}
+        ul li:nth-child(3){ background: #c7b600;;order: 4;/*align-self: flex-end;  per child-el */ }
+        ul li:nth-child(4){ background: #a90077;order: 3; }
+        ul li:nth-child(5){ background: #00a378;;order: 2; }
+        ul li:last-child  { background: #00ea72; order: 1;}
+    </style>
+</head>
+<body>
+<div id="container">
+    <ul id="flex-container">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</div>
+</body>
+</html>

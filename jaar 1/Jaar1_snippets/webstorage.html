@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    if(typeof (Storage)!== "undefined"){
+        //code for local/sessionStorage
+    }else{
+        //sorry no web storage support
+    }
+    localStorage.setItem("lastname","lekens");
+    document.getElementById("demo").innerHTML = localStorage.getItem("lastname");
+
+    localStorage.lastname = "lekens";
+    document.getElementById('demo').innerHTML = localStorage.lastname;
+
+    // enkel strings
+    //JSON.stringify & JSON.parse voor objecten
+</script>
+</body>
+</html>

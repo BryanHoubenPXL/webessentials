@@ -1,0 +1,13 @@
+left{
+    float: left;
+    width: 50px;
+}
+center{
+    display: inline-block;
+
+}
+
+right{
+    float: left;
+    width: 50px;
+}

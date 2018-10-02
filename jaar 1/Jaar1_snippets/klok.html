@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<output id="output"></output>
+<br>
+<output id="aftelklok"></output>
+<script>
+    let myVar = setInterval(myTimer, 1000);
+    let timer = setInterval(aftelKlok,1000);
+    function myTimer() {
+        let d = new Date();
+        let t =  d.toLocaleTimeString();
+        document.getElementById("output").innerHTML = t;
+    }
+    let countDownDate = new Date(2018,6,15,17).getTime();/*wk finale*/
+
+    function aftelKlok() {
+        let now = new Date().getTime();
+        let distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("aftelklok").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }
+</script>
+</body>
+</html>

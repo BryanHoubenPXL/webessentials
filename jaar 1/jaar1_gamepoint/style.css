@@ -1,0 +1,68 @@
+body {
+    background-color: #efefef;
+}
+
+header {
+    color: #808282;
+    font-family: "Gill Sans MT",sans-serif;
+    font-weight: bold;
+    padding-le  ft: 50px
+}
+header #titelbegin {
+    color: #2d3142;
+}
+nav {
+    background-color: #4f5d75;
+    font-family: "Gill Sans MT",sans-serif;
+    padding: 20px 20px 20px 50px;
+    border-radius: 15px;
+
+}
+nav a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: #efefef;
+}
+nav a:hover {
+    font-weight: bold;
+    color: #EF8354;
+}
+h2.uitgelichttitel, h2.verkochttitel {
+    font-family: "Arial Black",sans-serif;
+    font-weight: bold;
+    color: #EF8354;
+    padding-bottom: 30px;
+}
+#uitgelicht {
+    padding: 0px 100px 0px 40px;
+    float:left;
+    position:relative;
+    width: 500px;
+}
+#bestverkocht {
+    padding: 0px 40px 0px 100px;
+    float: right;
+    position: relative;
+    width: 500px;
+}
+
+#uitgelicht img[alt="gta"] {
+    float: left;
+    width: 250px;
+}
+#uitgelicht p {
+    float: right;
+    width: 230px;
+    padding-left: 15px;
+    font-family: Arial, sans-serif;
+    color: #2d3142;
+
+}
+
+#uitgelicht h3 {
+    font-family: "Gill Sans MT", sans-serif;
+    font-weight: bold;
+    color: #4f5d75;
+    width: 230px;
+    float: right;
+}

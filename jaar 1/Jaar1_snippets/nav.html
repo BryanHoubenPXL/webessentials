@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        header h2{
+            color: steelblue;
+            font-size: 24pt;
+            margin: 10px 0px 5px 15px;
+        }
+        span{
+            color: seagreen;
+        }
+        nav ul{
+            background-color: steelblue;
+            margin: 0;
+            padding: 8px;
+
+        }
+
+
+
+        nav li{
+
+            display: inline;
+            margin: 0;
+            font-size: 16pt;
+        }
+        nav a{
+            margin: 0;
+            text-decoration: none;
+            color: white;
+            padding: 8px 10px 8px 10px;
+        }
+        nav a:hover{
+            background-color: seagreen;
+        }
+        .bar {
+
+             visibility: collapse;
+         }
+        @media screen and ( max-width: 500px)
+        {
+            nav a{
+                visibility: hidden;
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+            }
+            nav li{
+                visibility: hidden;
+                width: 0;
+                height: 0;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul{
+                max-height: 40px;
+            }
+            .bar{
+                width: 35px;
+                height: 5px;
+                background-color: black;
+                margin: 6px 0;
+                visibility: visible;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>game<span>point</span></h2>
+    <nav>
+        <ul>
+            <li><div class="bar" ></div>
+                <div class="bar" ></div>
+                <div class="bar"></div>
+            </li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./games.html">Games</a></li>
+            <li><a href="./uitverkoop.html">Uitverkoop</a></li>
+            <li><a href="./accessoires.html">Accessoires</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
